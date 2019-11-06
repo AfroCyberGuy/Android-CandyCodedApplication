@@ -90,7 +90,7 @@ public class DetailActivity extends AppCompatActivity {
         shareIntent.setType("text/plain");
 
         String shareString = SHARE_DESCRIPTION + mCandyImageUrl + HASHTAG_CANDYCODED;
-        shareIntent.putExtra(Intent.EXTRA_INTENT, shareString);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
 
         startActivity(shareIntent);
 
